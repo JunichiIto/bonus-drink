@@ -14,7 +14,8 @@ class BonusDrink
       emp_bottle = emp_bottle - (get_bottle * @@bonus_bin) + get_bottle
     end
     puts("トータルで飲んだ本数は#{total_bottle}です。")
+    return total_bottle
   end
 end
 
-BonusDrink.total_count_for(100)
+BonusDrink.total_count_for(0)
