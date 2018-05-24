@@ -9,11 +9,10 @@ class BonusDrink
     # while do
     while emp_bottle >= @@bonus_bin
       get_bottle = emp_bottle.div(@@bonus_bin)
-      p get_bottle
       total_bottle += get_bottle
       emp_bottle = emp_bottle - (get_bottle * @@bonus_bin) + get_bottle
     end
-    puts("トータルで飲んだ本数は#{total_bottle}です。")
+    # puts("トータルで飲んだ本数は#{total_bottle}です。")
     return total_bottle
   end
 end
