@@ -3,3 +3,6 @@ class BonusDrink
     0
   end
 end
+
+oj = BonusDrink.new
+puts oj.total.conut_for
