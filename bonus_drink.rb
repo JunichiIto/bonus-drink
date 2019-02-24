@@ -1,8 +1,13 @@
 class BonusDrink
   def self.total_count_for(amount)
-    0
+    if amount <= 2
+      amount
+    else
+      if amount.even?
+        amount + (amount.div(2) - 1)
+      else
+        amount + (amount - 1).div(2)
+      end
+    end
   end
 end
-
-oj = BonusDrink.new
-puts oj.total.conut_for
