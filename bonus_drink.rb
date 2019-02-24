@@ -1,8 +1,14 @@
 class BonusDrink
-  def self.total_count_for(amount)
-    0
+  def total_count_for(amount)
+
+    if amount < 3
+      amount
+    else
+      amount + amount.div(3)
+    end
   end
 end
 
-oj = BonusDrink.new
-puts oj.total.conut_for
+obj = BonusDrink.new
+ret = obj.total_count_for(ARGV[0].to_i)
+puts ret
