@@ -13,6 +13,13 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   rspec (~> 2.14)
+
+RUBY VERSION
+   ruby 2.7.2p137
+
+BUNDLED WITH
+   2.1.4
